@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/* ============================================================
+   TILLMAX RETAILMAX POS — Global Styles
+   Segoe UI Variable for native-Windows feel in browser
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --brand: #1F5FD1;
+  --brand-dark: #1748A8;
+  --manager: #6B4FCC;
+  --manager-light: #8B6FE8;
+  --manager-bg: rgba(107, 79, 204, 0.08);
+  --destructive: #C4314B;
+  --warning: #F0A30A;
+  --success: #107C10;
+
+  /* Surface layers (Mica-style) */
+  --surface-base: #F8F9FA;
+  --surface-1: #FFFFFF;
+  --surface-2: #F3F4F6;
+  --surface-3: #E9EAEC;
+
+  /* Status bar */
+  --statusbar-bg: #1A1D21;
+  --statusbar-text: #E8EAED;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Segoe UI Variable stack — native Windows feel */
+  font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  background: var(--surface-base);
+  color: #1A1D21;
+  /* Prevent text selection on a touch till */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Tabular numerics for prices — critical for till credibility */
+.tabular-nums,
+.price,
+.total,
+.amount {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+  letter-spacing: -0.01em;
+}
+
+/* Touch-first scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 99px;
+}
+
+/* Acrylic overlay for modals/keypad */
+.acrylic {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.acrylic-dark {
+  background: rgba(20, 22, 28, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Manager mode tint */
+.manager-surface {
+  background: linear-gradient(135deg, rgba(107, 79, 204, 0.04) 0%, rgba(107, 79, 204, 0.08) 100%);
+}
+
+/* Smooth fast transitions everywhere */
+* {
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Touch target minimum enforcement */
+.touch-target {
+  min-height: 56px;
+  min-width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.touch-target-lg {
+  min-height: 72px;
+  min-width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
