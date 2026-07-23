@@ -55,7 +55,7 @@ export default function HistoryPage() {
 
   if (actionDone) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         <StatusBar />
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '16px' }}>
           <div style={{ fontSize: '56px' }}>
@@ -81,7 +81,7 @@ export default function HistoryPage() {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', background: '#F3F4F6', overflow: 'hidden' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#F3F4F6', overflow: 'hidden' }}>
       <StatusBar />
 
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>

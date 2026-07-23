@@ -93,7 +93,7 @@ export default function SignOnPage() {
 
   return (
     <div style={{
-      minHeight: '100vh',
+      minHeight: '100%',
       background: 'linear-gradient(135deg, #0D1117 0%, #161B2E 50%, #1A1340 100%)',
       display: 'flex',
       flexDirection: 'column',

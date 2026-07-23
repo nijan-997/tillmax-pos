@@ -37,7 +37,7 @@ export default function TenderPage() {
 
   if (showReceipt) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', background: '#F3F4F6' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#F3F4F6' }}>
         <StatusBar />
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{
@@ -116,7 +116,7 @@ export default function TenderPage() {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', background: '#F3F4F6' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#F3F4F6' }}>
       <StatusBar />
       <div style={{ flex: 1, display: 'flex', gap: '24px', padding: '24px', overflow: 'hidden' }}>
 
